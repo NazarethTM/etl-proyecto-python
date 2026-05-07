@@ -1,0 +1,6 @@
+cod_cliente;nombre;apellido1;apellido2;dni;correo;telefono;DNI_OK;DNI_KO;Telefono_OK;Telefono_KO;Correo_OK;Correo_KO;dni_hash;dni_masked
+C001;Maria;Garcia;Perez;12345678A;maria.garcia@example.com;612345678;N;Y;Y;N;Y;N;b3f9081331cfda93a5b4dce04a4f1ae09cf8528235982348091f4244d9625b0b;123****A
+C002;Jose;Lopez;Hernandez;87654321B;jose.lopez@example.com;612345679;N;Y;Y;N;Y;N;57188ea205196ad635c5627163239fefad354a01271e27749d81bb99a1de9a52;876****B
+C003;Ana-Maria;Ruiz;;23456789C;ana.ruiz@example.com;612345680;N;Y;Y;N;Y;N;ad6bce73264728996a5f6d2d285955b9106ce8a98dd24120e603c31ad0d1bd64;234****C
+C004;Pedro;Martinez;Sanchez;11111111H;pedro.martinez@example.com;34666777888;Y;N;Y;N;Y;N;a07741209e1a3b299e1351a35dc8e481c6f869c14f7bc325162e1f92e81f6917;111****H
+C005;Laura;Gomez;Diaz;99999999R;correo-invalido;abc;Y;N;N;Y;N;Y;6c6a45d4c8cbf631fee8676da8466e10a9eec1a37f5f9aad63270fd168f1fc7e;999****R

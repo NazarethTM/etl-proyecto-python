@@ -1,20 +1,17 @@
-from src.extract import extract_clientes, extract_tarjetas
-from src.transform import limpiar_dataframe
+"""
+Punto de entrada del pipeline ETL.
 
-# rutas
-clientes_path = "input/clientes-2025-11-10.csv"
-tarjetas_path = "input/Tarjetas-2025-11-10.csv"
+Uso básico:
+    python run_pipeline.py
 
-# EXTRACT
-df_clientes = extract_clientes(clientes_path)
-df_tarjetas = extract_tarjetas(tarjetas_path)
+Con variables de entorno para MySQL:
+    DB_HOST=localhost DB_USER=etl_user DB_PASSWORD=secreto DB_NAME=etl_db python run_pipeline.py
 
-# TRANSFORM
-df_clientes_clean = limpiar_dataframe(df_clientes)
-df_tarjetas_clean = limpiar_dataframe(df_tarjetas)
+Con sal personalizada para el hash:
+    ETL_SALT="mi_sal_secreta" python run_pipeline.py
+"""
 
-# SAVE
-df_clientes_clean.to_csv("output/clientes_clean.csv", sep=";", index=False)
-df_tarjetas_clean.to_csv("output/tarjetas_clean.csv", sep=";", index=False)
+from etl_pipeline import run_pipeline
 
-print("Pipeline ejecutado correctamente")
+if __name__ == "__main__":
+    run_pipeline()
