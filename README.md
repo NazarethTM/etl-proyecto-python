@@ -1,8 +1,7 @@
 # Pipeline ETL — Proyecto Final Python
 
 **2º DAW · Sistema de Ingeniería de Datos**  
-**Grupo:** Ken, Laura, Naza  
-**Fechas:** 17 de abril – 15 de mayo de 2025
+**Grupo PyKrew:** Ken, Laura, Naza  
 
 ---
 
